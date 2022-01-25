@@ -31,4 +31,6 @@ ul {
     color: lightgoldenrodyellow;
     font-size: 1rem;
 }
-
+.choices {
+  display: flex;
+}
