@@ -40,3 +40,14 @@ export const getMetals = () => {
     return database.metals.map(metal => ({...metal}))
 }
 
+export const getSizes = () => {
+    return database.sizes.map(sizes => ({...sizes}))
+}
+
+export const getStyles = () => {
+    return database.styles.map(styles => ({...styles}))
+}
+
+export const getOrders = () => {
+    return database.customOrders.map(customOrders => ({...customOrders}))
+}
