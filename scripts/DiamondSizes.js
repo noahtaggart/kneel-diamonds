@@ -1,4 +1,4 @@
-import { getSizes, setSize, getCustomOrders } from "./database.js"
+import { getSizes, setSize, getCustomOrders } from "./dataAccess.js"
 
 
 const sizes = getSizes()

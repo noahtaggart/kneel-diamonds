@@ -1,5 +1,5 @@
 
-import { getMetals, addCustomOrder } from "./database.js"
+import { getMetals, addCustomOrder } from "./dataAccess.js"
 import { DiamondSizes } from "./DiamondSizes.js"
 import { JewelryStyles } from "./JewelryStyles.js"
 import { Orders } from "./Orders.js"
