@@ -35,23 +35,23 @@ const database = {
 }
 
 export const getMetals = () => {
-    return database.metals.map(metal => ({...metal}))
+    return database.metals.map(metal => ({ ...metal }))
 }
 
 export const getSizes = () => {
-    return database.sizes.map(sizes => ({...sizes}))
+    return database.sizes.map(sizes => ({ ...sizes }))
 }
 
 export const getStyles = () => {
-    return database.styles.map(styles => ({...styles}))
+    return database.styles.map(styles => ({ ...styles }))
 }
 
 export const getTypes = () => {
-    return database.types.map(type => ({...type}))
+    return database.types.map(type => ({ ...type }))
 }
 
 export const getOrders = () => {
-    return database.customOrders.map(customOrders => ({...customOrders}))
+    return database.customOrders.map(customOrders => ({ ...customOrders }))
 }
 
 export const setMetal = (id) => {
@@ -70,9 +70,13 @@ export const setType = (id) => {
     database.orderBuilder.typeId = id
 }
 
+export const getCustomOrders= () => {
+    return {...database.orderBuilder}
+}
+
 export const addCustomOrder = () => {
     // Copy the current state of user choices
-    const newOrder = {...database.orderBuilder}
+    const newOrder = { ...database.orderBuilder }
 
     // Add a new primary key to the object
     const lastIndex = database.customOrders.length
